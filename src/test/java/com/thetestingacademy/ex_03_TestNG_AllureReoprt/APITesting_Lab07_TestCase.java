@@ -3,7 +3,8 @@ package com.thetestingacademy.ex_03_TestNG_AllureReoprt;
 import io.restassured.RestAssured;
 import org.testng.annotations.Test;
 
-public class APITesting_Lab06_TestCase {
+
+public class APITesting_Lab07_TestCase {
     String pincode = "110048";
 
     @Test
@@ -22,7 +23,7 @@ public class APITesting_Lab06_TestCase {
 
     @Test
     public void test_GET_NEGATIVE_TC2() {
-        pincode = "@";
+        pincode = "505001";
         RestAssured
                 .given()
                 .baseUri("https://api.zippopotam.us")
@@ -49,4 +50,5 @@ public class APITesting_Lab06_TestCase {
 
 
 }
+
 
