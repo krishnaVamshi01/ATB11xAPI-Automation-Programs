@@ -22,7 +22,7 @@ public class APITesting_Lab02_RA {
         String pincode = sc.next();
 
         RestAssured
-                .given().baseUri("https://api.zippopotam.us")
+                .given().baseUri("https://api.zippopotam.us/")
                 .basePath("/IN/" + pincode)
                 .when()
                 .get()
